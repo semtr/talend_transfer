@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_6wOzgc_XEe2c6vDIzRg0zg" label="talend_transfer" description="" language="java" technicalLabel="TALEND_TRANSFER" author="_6wOzgs_XEe2c6vDIzRg0zg" productVersion="Talend Data Management Platform-8.0.1.20220923_1236-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/semtr/talend_transfer.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" bigData="false">
+    <migrationTask xmi:id="_6w460M_XEe2c6vDIzRg0zg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_6wOzgs_XEe2c6vDIzRg0zg" login="levent.bas@semtr.com" firstName="Levent" lastName="Baş" type="DQ" additionnalData="{}"/>
+</xmi:XMI>

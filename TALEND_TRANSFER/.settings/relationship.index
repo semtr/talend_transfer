@@ -4,15 +4,7 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ {
-    "id" : "_R779wM_bEe2c6vDIzRg0zg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_ZlPGANM_Ee2K2I5LThYMzg",
-    "version" : "Latest",
-    "type" : "property"
-  } ]
+  "relatedItems" : [ ]
 }, {
   "baseItem" : {
     "id" : "_QKNNUGZ8EeWm5YvsrIoYzQ",

@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PI7emMzzYgAYfFTcHeofgO2dEj0fTaHlz7CSjDX8"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pEKMol5Gv7FQCkHai3+f6smwAhMz68yZbyYpi/j1"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Nx78Jz+A4EW1JYWltEZ9fY8877WKKYXMxaMqHayL"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Lq8F8BqzWsOYUdSWonV039i+8hgzyw6iTqIEuCzl"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -108,281 +108,118 @@
     <routinesParameter id="_7nnugM_XEe2c6vDIzRg0zg" name="TalendStringUtil"/>
     <routinesParameter id="_7nkEIM_XEe2c6vDIzRg0zg" name="TalendString"/>
   </parameters>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="PRIOR_TO_V9"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;10.85.86.20&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;artibir&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;lbas&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vcoCZQTmfkRIuA4OPF5oOeqCAz9mIRqZBDzdx9y7L5/lbxEM51Yi"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tVerticaConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
+  <node componentName="tVerticaInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_R779wM_bEe2c6vDIzRg0zg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="VERTICA_9_0"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="HOST" value="&quot;172.31.155.140&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;5433&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mydb&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;external&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;levent&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SSdHl7IQIuvDzJELowzH2a17iiqCLLFN/9Uw3143x5/Vo/bU8Q/Wyg=="/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="V9_X"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="PostgreSQL"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5432&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8uT8WyNutZunVCp7fiNRrFa3pkEV5n7Glz2i0aZa"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;carrefoursa_urunagaci_csa_tbl&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G+2hvHQhPeTiJjx/Vj7mg+A6QpSGiEYzEBC7R5yzmBzUvEAu61m4ZQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;csa_urunagaci&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from model_input_csa_urun_egilimi.carrefoursa_urunagaci_csa_tbl&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="rey_no"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bolge_kodu"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="rey_adi"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="bolge_adi"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="aile_no"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gida_alkolsuz_icecekler"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="aile_adi"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="alkollu_icecekler_tutun"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="graile_adi"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giyim_ayakkabi"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="graile_no"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="konut_su_elkt_gaz_diger_yktlr"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="uom"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mobilya_evaletleri_evbkm_hizm"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="uom2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="saglik"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ulastirma"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="haberlesme"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="eglence_kultur"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="egitim"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lokanta_oteller"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cesitli_mal_hizmetler"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <metadata connector="FLOW" name="tDBInput_1">
-      <column comment="" defaultValue="" key="false" length="10" name="rey_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="rey_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="aile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="aile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="graile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="graile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tVerticaOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="VERTICA_9_0"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="VERTICA"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;5433&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Dgi9EzllzFducPyy6J9FERH8ek1GAv7BV16L0sh5"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
-    <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="vertica_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false"/>
-    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
-    <elementParameter field="CHECK" name="ABORT_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="TEXT" name="REJECT_MAX" show="false" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" show="false" value=""/>
-    <elementParameter field="TEXT" name="EXCEPTIONS_NODE" show="false" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" show="false" value=""/>
-    <elementParameter field="TEXT" name="REJECTED_NODE" show="false" value=""/>
-    <elementParameter field="CHECK" name="NO_COMMIT" show="false" value="true"/>
-    <elementParameter field="TEXT" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="100"/>
-    <elementParameter field="CHECK" name="BATCH_MODE" value="true"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="100"/>
-    <elementParameter field="TABLE" name="ADD_COLS"/>
-    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="rey_no"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="rey_adi"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="aile_no"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="aile_adi"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="graile_adi"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="graile_no"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="uom"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="uom2"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
-    <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" defaultValue="" key="false" length="10" name="rey_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="rey_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="aile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="aile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="graile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="graile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="10" name="rey_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="rey_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="aile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="aile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="graile_adi" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="graile_no" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2147483647" name="uom2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="Vertica"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="demog_ibbs1" name="tDBInput_1">
+      <column comment="" key="false" length="80" name="bolge_kodu" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="bolge_adi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="gida_alkolsuz_icecekler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="alkollu_icecekler_tutun" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="giyim_ayakkabi" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="konut_su_elkt_gaz_diger_yktlr" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="mobilya_evaletleri_evbkm_hizm" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="saglik" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="ulastirma" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="haberlesme" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="eglence_kultur" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="egitim" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="lokanta_oteller" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="19" name="cesitli_mal_hizmetler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
   </node>
-  <node componentName="tPostgresqlClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-  </node>
-  <node componentName="tVerticaClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
-  </node>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBClose_1" offsetLabelX="0" offsetLabelY="0" source="tDBClose_1" target="tDBClose_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
-  </connection>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPostjob_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBClose_2"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_559c4fd3-86fb-4be3-b942-ca68c22ead2b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mz6QtG+Y9KjxxkKYkXQ8mWn1twTPEJxUy7dwq3z7akDK7u2Nce//a1SetTu7wPwv7YbEtj2D0qV6&#13;
-kaX74aAuAw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8859932c-6894-4b06-ba5b-76c92d00c0fc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gCweE2Z2TndfC7n8m4Uk/V4MKZhM5p7qOtIFVRJxlgeFMfqBvpI8UymLfh/dJvSkhuOF9o4dG2K7&#13;
-4OOZ279Zag==</DigestValue></Reference></SignedInfo><SignatureValue>odVkx2nuaFxGZRWGPOWHmOVjkFyV4T2t9d+tcSuvUVSf4t4jybzKvAR7EA6C5OKJ26SPqLj5VcuU&#13;
-dZIQ7wuFJwDtkeakHj2XOjzp8PkE732IxDVCxEn0dR2MzDrfu9ZOqHKK2/9pB2o6kuLiSUfIUyKW&#13;
-7nhOIYtiI9Vp8s2XM6sB2mtuVWVmAVSikPq+8u+ExNRsQkCTMo6EceEnLfpUvaCHS4wCLPtEK8Xx&#13;
-qI7DAS5NmDImbLvsl8YfeJYVorI5jTBvb7QetPPIYjYVI8+cuecaWPYbv2CrkNtFP8b6+h4/rhqW&#13;
-O2lsPKzWrumtWVx5/elPs4z9cHzcbVgfJM9TMQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_aa9ce726-0827-4f84-9b3d-8faeedbf211f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b0WzrbH4vje6u+8R+l8jupaMNvb4WgZ4Ymn+9Y2wdQ7pN5XSvtpBK/LMPJ3QMH10Gf8MSpFvGJif&#13;
+XACNYwdUkw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bc15b709-814b-4c85-86a9-96b911e7c322"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sFyXrClTSC8LLL2OZDjwKcQSvPKJdsXIzf8vcvG7W15bT7u6a87HbcyXxqtxBkBb/TKQgnmfb5f1&#13;
+efYVjcKCrQ==</DigestValue></Reference></SignedInfo><SignatureValue>Oil9ly8GXTzwnS0N9SvuvcAPG7X/+Bs2qKTeKux+w6NHu8aAjpw8IygU7HrFKmSClsfmwBC9K5on&#13;
+33n+k44Ss94lOxY8yRQ0bcpdw0na9dCAV68399miLH6CazB4Vsp7zLiKl9gpf6KW4Nw+T6zDzUwe&#13;
+Ygjv8+axx9p70JDrL4x19NnZT/MOC5Ey9CiL7sTWM+Vl6Wjra5rAyzaXwGChFeu6399g8pVhklTo&#13;
+xExS4eYd0FnyeMKthCQ3EpreHIwvGFrB6d+4A4zssK0BegmFnQkkzgM7TI3vFbMrEOGvWPD4nG31&#13;
+/3wB4bte0dBO3W74z/DmECC4nIMVnT6iqAJVkQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -404,4 +241,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8859932c-6894-4b06-ba5b-76c92d00c0fc" Target="#_559c4fd3-86fb-4be3-b942-ca68c22ead2b"><Timestamp>2023-06-22 19:07:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bc15b709-814b-4c85-86a9-96b911e7c322" Target="#_aa9ce726-0827-4f84-9b3d-8faeedbf211f"><Timestamp>2023-06-26 16:26:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

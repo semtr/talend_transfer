@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" internalId="_eS1xYBQpEe6qFur15nUDNg" name="PostgreSQL_CSA_Password" prompt="PostgreSQL_CSA_Password?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_Password" value="enc:system.encryption.key.v1:aNovN3fpbTwUAs8wKtMZJSt3I12dPh6GNUpySP7EsySn/+PneQ=="/>
+    <contextParameter comment="" internalId="_eS1xYBQpEe6qFur15nUDNg" name="PostgreSQL_CSA_Password" prompt="PostgreSQL_CSA_Password?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_Password" value="enc:system.encryption.key.v1:sXlUX44416l+gYXCCw+JdglnnL1+ijVd+pnyZ+W6usFOaSPXhQ=="/>
     <contextParameter comment="" internalId="_eS1xYRQpEe6qFur15nUDNg" name="PostgreSQL_CSA_Port" prompt="PostgreSQL_CSA_Port?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_eS1xYhQpEe6qFur15nUDNg" name="PostgreSQL_CSA_Schema" prompt="PostgreSQL_CSA_Schema?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="model_input_csa_urun_egilimi"/>
     <contextParameter comment="" internalId="_eS1xYxQpEe6qFur15nUDNg" name="PostgreSQL_CSA_Server" prompt="PostgreSQL_CSA_Server?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="10.85.86.20"/>
@@ -51,7 +51,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1EEmadM3/pgphv5Pu3+4t2P3QpSR/eBN4YotZPg1"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:umv4yCOxdF0FvSvkQCfo3pafJYWNzdk+Ck/fwiy6"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -86,7 +86,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+c5Nkjr0KxaczEX7PPqRxdXvrtFkywh9P2WQXLaH"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TNV81mZEVJYRhrklok5JbZ5HBdH3uvRShJyGX28/"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -129,7 +129,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.PostgreSQL_CSA_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PostgreSQL_CSA_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.PostgreSQL_CSA_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NV7eA5dGuMr+X0FGrKJ8l9Wv9sdoCOV3XWGDKgXey+5DfSwkEDyaD9PD5EBzznN2ooQ2UGC21z/eQw8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:M1b0B6VI6tFKIXMcH7ZNUe+7fiMtI0XX3xF14TdtQjMUxLOxbealKnuosfKtr95y+4vzWY1mf3nUHhs="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_R779wM_bEe2c6vDIzRg0zg - demog_ibbs1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;carrefoursa_urunagaci_csa_tbl&quot;"/>
@@ -225,7 +225,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tVerticaOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+  <node componentName="tVerticaOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_R779wM_bEe2c6vDIzRg0zg"/>
@@ -236,15 +236,13 @@
     <elementParameter field="TEXT" name="HOST" value="&quot;172.31.155.140&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;5433&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mydb&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;external&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;levent&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KGSoyvvyb+ibJMow+p7+aM6g2s328AZX0DwsweRiS+Lda1pAGkGCmg=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ou5jEwJaHAg4HacbrTvn6Z0t6R0wdmsRTOLIFeJADSBuJQvCUFgZUA=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;csa_urun_agaci&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_R779wM_bEe2c6vDIzRg0zg - demog_ibbs1"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_R779wM_bEe2c6vDIzRg0zg - demog_ibbs1"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
@@ -340,7 +338,7 @@
     </elementParameter>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="CHECK" name="CREATE_PROJECTION" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_PROJECTION" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="Vertica"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="demog_ibbs1" name="tDBOutput_1">
@@ -350,40 +348,40 @@
       <column comment="" key="false" length="80" name="bolge_adi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="gida_alkolsuz_icecekler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="gida_alkolsuz_icecekler" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="alkollu_icecekler_tutun" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="alkollu_icecekler_tutun" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="giyim_ayakkabi" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="giyim_ayakkabi" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="konut_su_elkt_gaz_diger_yktlr" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="konut_su_elkt_gaz_diger_yktlr" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="mobilya_evaletleri_evbkm_hizm" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="mobilya_evaletleri_evbkm_hizm" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="saglik" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="saglik" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="ulastirma" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="ulastirma" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="haberlesme" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="haberlesme" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="eglence_kultur" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="eglence_kultur" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="egitim" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="egitim" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="lokanta_oteller" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="lokanta_oteller" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="cesitli_mal_hizmetler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="cesitli_mal_hizmetler" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -394,40 +392,40 @@
       <column comment="" key="false" length="80" name="bolge_adi" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="gida_alkolsuz_icecekler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="gida_alkolsuz_icecekler" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="alkollu_icecekler_tutun" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="alkollu_icecekler_tutun" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="giyim_ayakkabi" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="giyim_ayakkabi" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="konut_su_elkt_gaz_diger_yktlr" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="konut_su_elkt_gaz_diger_yktlr" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="mobilya_evaletleri_evbkm_hizm" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="mobilya_evaletleri_evbkm_hizm" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="saglik" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="saglik" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="ulastirma" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="ulastirma" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="haberlesme" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="haberlesme" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="eglence_kultur" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="eglence_kultur" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="egitim" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="egitim" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="lokanta_oteller" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="lokanta_oteller" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" defaultValue="" key="false" length="19" name="cesitli_mal_hizmetler" nullable="true" pattern="" precision="0" sourceType="INTEGER" type="id_Long" usefulColumn="true">
+      <column comment="" defaultValue="" key="false" length="19" name="cesitli_mal_hizmetler" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -443,13 +441,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1b48df04-bc06-4493-b138-c419188dc512"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+PMK6BMC/AkIXXn4ACFArdOmaHJtRqkaH/0w14VPzARtOep6nUAp3z2LkhT59KbV8a84Al07/pDY&#13;
-XRAmiZ74tA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f684d430-0649-4099-99ec-269f6331fb67"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KZVsIPSqnV7xOfeZqAS0haGxREpTnol1oBnBCuAJHF7koQmUzLrYNhK+ubZHk9KLJMKTMJuR99FZ&#13;
-nlKtnxEGLg==</DigestValue></Reference></SignedInfo><SignatureValue>V2CqD3OxiXD9RShAt2xxZwugvGp5JASQLeDd93e1oGwazco3kHzoVasXkEVSrfjPOz2gjEC2+UoY&#13;
-9ge7meBqiLP56T0SJf5D6eBOIzTm+f2st3yGHDXdetF+yUDqeHOTZMMeiIDOiM9v+EwnbPxE0Axd&#13;
-LtTuNswM1o9+TeNqtcX2n5op3e2RSaX6Prtyantj70CsNVlT323L3fseuamKXCdo4uumqUINHfi9&#13;
-Wal0N571WzoJeBiZZivSCCfHtjSUmrBvbqaIMH/kGOQwKLdQEWUuPm9jMJ/jLqlA1wz5zhpfAVGm&#13;
-jQ3JhyEh51assfZBgSx0iW3cKkwVo6fPA5u5rA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_de8e6f5c-bae6-43bb-8f8d-136420e92680"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0AAu9YtyNjrS+3cn9fJHeRbKhu0UIYGSxMSW7mu56VoDYLEOitw0yBwLPN/dU6kAGNn65ktPErNF&#13;
+MKo7CMLh9w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_695f378b-5102-461b-b28f-372260367121"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jXZDPdb0PxVG7hQQlUn05P1OxxyDdtK7DZb4P42pYL2Y9ulqbqLFZBb6U1rdEJKnq3TMknfFhYr1&#13;
+OAPb4WI95Q==</DigestValue></Reference></SignedInfo><SignatureValue>X8LnXU0m8olk68lixmf6sPh66y8A2x8BUKkrELJrlmqpc5z7CuRJzXmQtbESCC5Vpc9vg7SQOYAH&#13;
+WEezV2LnixErQwEhil/yMPBVFXkHL+MSe/pzaDY5goNrZwYW68nfDnSUVI9hMmUSHwiE03Cvdsid&#13;
+ot92f2C+ncekD8uIUh4peJT2pS0xapVmZtUdJhlJ6wCeWl0yUO9X418udHhHjHjmNlLieze8R1RQ&#13;
+9G7aNArVBaNLNPShzGutLeRNzHy/rBaToALX3SAaK5Vr/Gkoz5GMh8BY39QzIMUl6Tw5j2VXB4Rv&#13;
+41jzTdG3cKIKYxyY6z/cNL4KdS5nbIU/fNdcww==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -471,4 +469,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f684d430-0649-4099-99ec-269f6331fb67" Target="#_1b48df04-bc06-4493-b138-c419188dc512"><Timestamp>2023-06-26 13:53:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_695f378b-5102-461b-b28f-372260367121" Target="#_de8e6f5c-bae6-43bb-8f8d-136420e92680"><Timestamp>2023-06-26 13:58:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

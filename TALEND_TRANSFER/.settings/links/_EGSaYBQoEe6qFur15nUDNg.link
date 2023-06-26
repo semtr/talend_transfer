@@ -1,0 +1,29 @@
+{
+  "itemId" : "_EGSaYBQoEe6qFur15nUDNg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_23wHEBQoEe6qFur15nUDNg",
+    "parameterList" : [ {
+      "id" : "_233b0RQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Password"
+    }, {
+      "id" : "_233b0hQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Port"
+    }, {
+      "id" : "_233b0xQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Schema"
+    }, {
+      "id" : "_233b1BQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Server"
+    }, {
+      "id" : "_233b1RQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_AdditionalParams"
+    }, {
+      "id" : "_233b1hQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Login"
+    }, {
+      "id" : "_233b1xQoEe6qFur15nUDNg",
+      "name" : "PostgreSQL_CSA_Database"
+    } ]
+  } ]
+}

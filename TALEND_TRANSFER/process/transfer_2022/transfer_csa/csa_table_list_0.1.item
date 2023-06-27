@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" internalId="_CGqDsBTSEe6t3dI4at3N7g" name="PostgreSQL_CSA_Password" prompt="PostgreSQL_CSA_Password?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_Password" value="enc:system.encryption.key.v1:RS2vMdm5JeN99mc7FD1w5lHfHfn/f0ffY6Vs2wvF7rb8T7Z1Ag=="/>
+    <contextParameter comment="" internalId="_CGqDsBTSEe6t3dI4at3N7g" name="PostgreSQL_CSA_Password" prompt="PostgreSQL_CSA_Password?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_Password" value="enc:system.encryption.key.v1:loNGe0M22Lxy1+XDFFA9C3hj2Ol1aZjeQ7DOBbId2zc6Wlqrfg=="/>
     <contextParameter comment="" internalId="_CGqDsRTSEe6t3dI4at3N7g" name="PostgreSQL_CSA_Port" prompt="PostgreSQL_CSA_Port?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="5432"/>
     <contextParameter comment="" internalId="_CGqDshTSEe6t3dI4at3N7g" name="PostgreSQL_CSA_Schema" prompt="PostgreSQL_CSA_Schema?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="model_input_csa_urun_egilimi"/>
     <contextParameter comment="" internalId="_CGqDsxTSEe6t3dI4at3N7g" name="PostgreSQL_CSA_Server" prompt="PostgreSQL_CSA_Server?" promptNeeded="false" repositoryContextId="_23wHEBQoEe6qFur15nUDNg" type="id_String" value="10.85.86.20"/>
@@ -51,7 +51,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:CgvHPCvIBl1KUymii+bVfproX/Jyh2pReo1bqaRK"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6qywyXI9DhXZj5Ia4TNI9VzIBQGNmgKVreWUvHaO"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -86,7 +86,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QfP2Brl+fEKMHfJGLUT4RnBRL+YX48tM9n6C23U/"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lsGhLo41oluUO9xdyLTjZuuZMA3sU2sEP/6ikfEb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -165,46 +165,58 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="table_list"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_EGSaYBQoEe6qFur15nUDNg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.PostgreSQL_CSA_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.PostgreSQL_CSA_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.PostgreSQL_CSA_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.PostgreSQL_CSA_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.PostgreSQL_CSA_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7BNqoJDA7eOzf6FIkd/CSgSbksX7JC/u6W8uJAlaGQCGG0jddDKFxpdviMW4q44T8wxYpVFKiKQfavA="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.PostgreSQL_CSA_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TEXT" name="LABEL" value="PostgreSQL_CSA"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="100" name="table_list" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
+    <metadata connector="FLOW" name="tDBInput_1"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDBInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cea3ce8c-d696-4300-8eac-55e304940cee"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UcJkuBVVmXl9pzMwyzCka2x8huWR0AsCQgTeXMHW1MZaUses+JOuWG+iOgg9EtX4t6kT54J4JUVH&#13;
-6djFWo+3Lg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e852736-bb36-44fc-9237-b0c90523d357"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oX/N2VZf5G9aJxG6gJKJkhkFaDI6HR1rEUuvJqWyUOO8oGaYeNRDUM4dYmLS5OjuWS1NiasKl2bl&#13;
-s11YHN+5ww==</DigestValue></Reference></SignedInfo><SignatureValue>FMUN3WKNjKgi9o+lw4vHA/mAykHR5KpXnEtTEKAkFFY60hFOoAcMHHpvlOFJFdWxbzT9CMahF+fn&#13;
-JEA3jNu81O/HkaxL1r70KQBiQFOvtK0bEv0Ev7kEx6c7EHVPQDk+8bjzwDrWTs0AvvnaSGJfaC+B&#13;
-A/ZpIeB15pN9nSVXUAOUrOtYPgsh1FAUNkXMUSu5LQVMap51pXHXhc5Oh9xMb59WD7RoFOr8qSFP&#13;
-7hjSznmXiOAkf69fM7vvoYNW52dPIZOaYU+9PuP+JY0GFDvsicou7NAt1C6zyCgb2FZ4Kw7ygqY/&#13;
-ES/XOluW7fCLXsGgHuUNs8OX4lRbDkOgjf0gzw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_39cb1a68-ec5f-4b64-98a5-efdeeb660d9c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fGR6ys8aoFJ2wB3VtThgVmoqPZCLf7xX2d13t4Cu3+ej/WuRwVsBdWXN7yGwOCFZziwhxaoYbU9j&#13;
++o/qHTk1qw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74c7f5e4-601c-4284-862c-713beda2136f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MXVeRVLbcDMij/N6zT7toBtCzdiW3lzu3ZhcIdN7KfidYKVynMRgiDe3nhWyZXNTTR/js4zi+71/&#13;
+fIKap4MU5A==</DigestValue></Reference></SignedInfo><SignatureValue>Uhh0Pzbdo5zIAcZwDlZiHeG9xOmO0iIqPAWRTTht5dwFX6XcCqA6KWTzEVjx3/MwnhlkRegZy/wg&#13;
++9+lEL4AsGAF5pG6UAj2U4LFi8IN6O34MmihY/qwKYPybHLoBnNTCYDg14FyxfmUYZLvivWhmfj5&#13;
+BK9ihJ5i5iT6zb0uFopa593RU6OvSvksdW7QBcedb671BivNphQivKBKDgFEsqhxnitQW56DLaXV&#13;
+Emvofp/FU7iR4eS8Hym9iglpVpw1LCxLp3UFf6Nngq5KJXYTv976cW6kAJu6o1XOrBIl929ik351&#13;
+QkDEshuIYF0SGFZtcoAOIudNluwEHQiGytehVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -226,4 +238,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e852736-bb36-44fc-9237-b0c90523d357" Target="#_cea3ce8c-d696-4300-8eac-55e304940cee"><Timestamp>2023-06-27 09:35:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74c7f5e4-601c-4284-862c-713beda2136f" Target="#_39cb1a68-ec5f-4b64-98a5-efdeeb660d9c"><Timestamp>2023-06-27 09:37:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

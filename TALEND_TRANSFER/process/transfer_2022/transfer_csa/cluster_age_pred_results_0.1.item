@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:5nA5dSzjOlv/0ApKzvJAm2ojK8mWmhZLOwCIqWTq"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DHQw9JecDY2mwqvXcEu1xChZ/l/JeDbY6wRG4/s7"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lo/uzdOOrU2YVPl5FauRPn9IcJBjxXhz6doMgcHn"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3QTKVp5d3VqNoRhuJ4SxcQmSIEdl0F3gVrLJ2Ae8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -108,28 +108,26 @@
     <routinesParameter id="_7nnugM_XEe2c6vDIzRg0zg" name="TalendStringUtil"/>
     <routinesParameter id="_7nkEIM_XEe2c6vDIzRg0zg" name="TalendString"/>
   </parameters>
-  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ZlPGANM_Ee2K2I5LThYMzg"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="PRIOR_TO_V9"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;10.85.86.20&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;artibir&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;model_input_csa_urun_egilimi&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;lbas&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yVLOS24GGKQVzgKYrRo0n8WnGMbDctuZlwDutZRuDpMffJTbJG2L"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KDXAdi59pykNN+iVW/KcpcjsHg6Ag2EqxKyipr+SHldVK5epUwYC"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ZlPGANM_Ee2K2I5LThYMzg - cluster_age_pred_results"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;cluster_age_pred_results&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_ZlPGANM_Ee2K2I5LThYMzg - cluster_potential"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;cluster_potential&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_age_pred_results\&quot;.\&quot;phone\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_age_pred_results\&quot;.\&quot;label\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_age_pred_results\&quot;.\&quot;Label\&quot;&#10;FROM \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_age_pred_results\&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;.\&quot;mobilephone\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;.\&quot;label\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;.\&quot;pot\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;.\&quot;pot2\&quot;, &#10;  \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;.\&quot;pot_final\&quot;&#10;FROM \&quot;model_input_csa_urun_egilimi\&quot;.\&quot;cluster_potential\&quot;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -141,23 +139,33 @@
     <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="phone"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mobilephone"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="label_group"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="label"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Label"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pot"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pot2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="pot_final"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="cluster_age_pred_results" name="tDBInput_1">
-      <column key="false" length="100" name="phone" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+    <metadata connector="FLOW" label="cluster_potential" name="tDBInput_1">
+      <column comment="" key="false" length="200" name="mobilephone" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="2147483647" name="label_group" nullable="true" pattern="" precision="0" sourceType="TEXT" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="19" name="label" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column key="false" length="19" name="Label" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+      <column comment="" key="false" length="17" name="pot" nullable="true" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="pot2" nullable="true" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="pot_final" nullable="true" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -175,7 +183,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;mydb&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;csa&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;levent&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:l0o/l0yDR6EC0XCvciELt/MFH9Au3/0DQGMBkiTyZLlL/XX7Dv4r+g=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:P8dIXeTwzWCPKf15A3Nb+l+rxC4Phgcm9ztKuLexL2BAN48UbqsbWw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;cluster_age_pred_results&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CHECK" name="USE_CASCADE" show="false" value="true"/>
@@ -248,22 +256,22 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_34cbea73-b68f-4a02-8bfc-b57ae266eb26"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wRzWeoBjgVw3ELRjOf/cX6ndBEWyzyhbQkdzIVcfC50c7DnZ0RDneb9+EaTNCeHCblEhT/o08dUf&#13;
-2QuvSSHYag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5468021-bb73-423f-b85d-1747f37557ed"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rFRnAaVrss5L52x4TYgVzCytAMVd7In1XkMotGtmQ5f8L+GoleJwTB+IEr2WO5JlMMEgbdCVNIYZ&#13;
-fOe7oHAsLw==</DigestValue></Reference></SignedInfo><SignatureValue>E76GpdFaAUV7aXIS8S5tWgWJfZLSb2d7MUPYCBZex1Ohot9w3LDmjCuCEmz2JIKOcknVEN0WU0M4&#13;
-xzuC2CFeAgWIwk1CWZCXPGlVw0C/noBxbDeOiogaGkgwAOhX6iVD1XIuLOxQrYmjNWjz2CI7SEe3&#13;
-bIRPm3M6xyhcbVZFPagWZyv0Tz0X3BaC7WrhtS6PsKC7gqIX4TmxW7PR+QxbgMQUeK8zCPr3gDar&#13;
-m2hLQF3PtQYP8/XUUPFYI3i48STnxs6cdkaoqRjaU6PN60U8ZYef2nEo1RXGNoj9NFNmkuxxdc5F&#13;
-tVuwCZ/3WnGjXiEJIN1ov1DFFIDsDbKxkY6n2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6d894506-7b38-4bb3-8b2d-425f5fa998fb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>djII29uNLIQORBlJnmWB6LEg/gntcn8GjgAiXvUNsGmDLR73ZNZNkFxlB4gKWGLB2bTZyjZKWAQq&#13;
+JeZelHI0BA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6002739d-2596-4da0-b999-7f1a5288473c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wki1skYl1u+iu/u0e9sgl2eozWd7f3/4MPrHPIs/bmTijdILdlFtId4x3JV0mugGDScz/NTR5quP&#13;
+8s54jMdKxA==</DigestValue></Reference></SignedInfo><SignatureValue>DGKJBwCyFK+FxmbnZOXTvXYhcFdcUCiiXYjPPo+Id1mUWHBcHSY2Zlwm0RWFIzlDtM6slVADXvQ4&#13;
+IzdgRiBkzr1YjsYTn1CPuHkAgpwszB5CPPWpCOf5D0bhQlOr22t6kGuWN0zeUwdyl+1u8YYA2VZB&#13;
+ac0BI0O7rHu20OP/VPMQ26lTsoKmla8EJKCxd+D0M4sdA1NXpE3apet9zjtnh1JhI6a6z1yZuNbb&#13;
+hQPD3NXFWUt2LVC3DSbmUXFxWWmTJcV8ZuSAy7qxTTI9qaqqe7RPcE/XNjoZTradRnZ8/QvpFOHZ&#13;
+nk1jrwDAVBixsI3bw3xFhYSpkaEWxHtoyX3TeA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -285,4 +293,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5468021-bb73-423f-b85d-1747f37557ed" Target="#_34cbea73-b68f-4a02-8bfc-b57ae266eb26"><Timestamp>2023-06-27 17:34:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6002739d-2596-4da0-b999-7f1a5288473c" Target="#_6d894506-7b38-4bb3-8b2d-425f5fa998fb"><Timestamp>2023-06-27 17:56:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
